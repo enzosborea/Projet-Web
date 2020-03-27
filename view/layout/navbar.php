@@ -9,11 +9,10 @@
                 <ul class="nav navbar-nav">
                     <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Devenir hôte</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Déposer une annonce</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">A propos</a></li>
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
-
                     <li class="dropdown order-1">
                         <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-primary dropdown-toggle">Connexion<span class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-menu-left dropdown-menu-lg-right mt-2">
