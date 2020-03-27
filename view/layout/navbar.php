@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
         <div class="container">
             <a href="home.php"><img class="img-fluid" src="../../../assets/images/wamingo.png" alt="logo du site" width="60px"></a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -7,9 +7,9 @@
             </button>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="home.php" class="nav-link">Accueil</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Devenir hôte</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="contact.php" class="nav-link">Nous contacter</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">A propos</a></li>
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
