@@ -34,6 +34,7 @@
             </div>
             <div class="carousel-caption">
                 <h1 class="h1-responsive">Wamingo</h1>
+                <p class="text-responsive">Votre site de reservation</p>
             </div>
         </div>
         <div class="carousel-item">
@@ -45,6 +46,7 @@
             </div>
             <div class="carousel-caption">
                 <h1 class="h1-responsive">Wamingo</h1>
+                <p class="text-responsive">Votre site de reservation</p>
             </div>
         </div>
     </div>
@@ -61,11 +63,7 @@
     <!--/.Controls-->
 </div>
     <!-- A FAIRE -->
-    <div class="input-daterange input-group" id="datepicker">
-    <input type="text" class="input-sm form-control" name="start" />
-    <span class="input-group-addon">to</span>
-    <input type="text" class="input-sm form-control" name="end" />
-    </div>
+
     <!-- A FAIRE -->
     <!--Accordion wrapper-->
     <div class="accordion md-accordion accordion-3 z-depth-1-half" id="accordionEx194" role="tablist"
@@ -169,7 +167,7 @@
     </div>
     <!--/.Accordion wrapper-->
 <!--/.Carousel Wrapper-->
-    <div class="row row-cols-1 row-cols-md-2 mx-5 my-3"> <!--marge right/left 5 et marge top/bot à 5 -->
+    <div class="row row-cols-1 row-cols-md-2 mx-5 my-5"> <!--marge right/left 5 et marge top/bot à 5 -->
         <div class="col mb-4">
             <div class="card">
                 <img src="../../../assets/images/maison1.jpg" class="card-img-top" alt="..."> <!--image a integrer propre-->
@@ -212,5 +210,6 @@
         </div>
     </div>
 </main>
+<?php require_once '../footer.php'?>
 </body>
 </html>
