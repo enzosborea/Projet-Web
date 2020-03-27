@@ -167,7 +167,8 @@
     </div>
     <!--/.Accordion wrapper-->
 <!--/.Carousel Wrapper-->
-    <div class="row row-cols-1 row-cols-md-2 mx-5 my-5"> <!--marge right/left 5 et marge top/bot à 5 -->
+<section class="bg-light">
+    <div class="row row-cols-1 row-cols-md-2 mx-5 pt-4"> <!--marge right/left 5 et marge top/bot à 5 -->
         <div class="col mb-4">
             <div class="card">
                 <img src="../../../assets/images/maison1.jpg" class="card-img-top" alt="..."> <!--image a integrer propre-->
@@ -180,7 +181,7 @@
         </div>
         <div class="col mb-4">
             <div class="card">
-                <img src="../../../assets/images/maison1.jpg" class="card-img-top" alt="...">
+                <img src="../../../assets/images/maison3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Maison</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -190,17 +191,7 @@
         </div>
         <div class="col mb-4">
             <div class="card">
-                <img src="../../../assets/images/maison1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Maison</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Voir</a> <!-- bouton en formule a faire -->
-                </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <img src="../../../assets/images/maison1.jpg" class="card-img-top img-fluid" alt="...">
+                <img src="../../../assets/images/maison2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Maison</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -209,6 +200,7 @@
             </div>
         </div>
     </div>
+</section>
 </main>
 <?php require_once '../footer.php'?>
 </body>
