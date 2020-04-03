@@ -28,7 +28,7 @@
                                         <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
                                     </div>
                                     <div class="form-group text-center">
-                                        <a href="#" data-toggle="modal" data-target="#modalPassword">Pas encore inscrit(e) ?</a>
+                                        <a href="inscription.php" >Pas encore inscrit(e) ?</a>
                                     </div>
                                 </form>
                             </li>
