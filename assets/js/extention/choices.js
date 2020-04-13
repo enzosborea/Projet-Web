@@ -306,7 +306,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  /*========================================
-	  =            Public functions            =
+	  =            Public include            =
 	  ========================================*/
 
 	  /**
@@ -1249,10 +1249,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return this;
 	    }
 
-	    /*=====  End of Public functions  ======*/
+	    /*=====  End of Public include  ======*/
 
 	    /*=============================================
-	    =                Private functions            =
+	    =                Private include            =
 	    =============================================*/
 
 	    /**
@@ -2859,7 +2859,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    }
 
-	    /*=====  End of Private functions  ======*/
+	    /*=====  End of Private include  ======*/
 
 	  }]);
 
@@ -4359,7 +4359,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	var funcProto = Function.prototype,
 	    objectProto = Object.prototype;
 
-	/** Used to resolve the decompiled source of functions. */
+	/** Used to resolve the decompiled source of include. */
 	var funcToString = funcProto.toString;
 
 	/** Used to check objects for own properties. */
@@ -4788,13 +4788,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	}
 
 	/**
-	 * Turns an object whose values are different reducer functions, into a single
+	 * Turns an object whose values are different reducer include, into a single
 	 * reducer function. It will call every child reducer, and gather their results
 	 * into a single state object, whose keys correspond to the keys of the passed
-	 * reducer functions.
+	 * reducer include.
 	 *
 	 * @param {Object} reducers An object whose values correspond to different
-	 * reducer functions that need to be combined into one. One handy way to obtain
+	 * reducer include that need to be combined into one. One handy way to obtain
 	 * it is to use ES6 `import * as reducers` syntax. The reducers may never return
 	 * undefined for any action. Instead, they should return their initial state
 	 * if the state passed to them was undefined, and the current state for any
@@ -4920,7 +4920,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * and get a function in return.
 	 *
 	 * @param {Function|Object} actionCreators An object whose values are action
-	 * creator functions. One handy way to obtain it is to use ES6 `import * as`
+	 * creator include. One handy way to obtain it is to use ES6 `import * as`
 	 * syntax. You may also pass a single function.
 	 *
 	 * @param {Function} dispatch The `dispatch` function available on your Redux
@@ -4980,7 +4980,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * Because middleware is potentially asynchronous, this should be the first
 	 * store enhancer in the composition chain.
 	 *
-	 * Note that each middleware will be given the `dispatch` and `getState` functions
+	 * Note that each middleware will be given the `dispatch` and `getState` include
 	 * as named arguments.
 	 *
 	 * @param {...Function} middlewares The middleware chain to be applied.
@@ -5024,12 +5024,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.__esModule = true;
 	exports["default"] = compose;
 	/**
-	 * Composes single-argument functions from right to left. The rightmost
+	 * Composes single-argument include from right to left. The rightmost
 	 * function can take multiple arguments as it provides the signature for
 	 * the resulting composite function.
 	 *
-	 * @param {...Function} funcs The functions to compose.
-	 * @returns {Function} A function obtained by composing the argument functions
+	 * @param {...Function} funcs The include to compose.
+	 * @returns {Function} A function obtained by composing the argument include
 	 * from right to left. For example, compose(f, g, h) is identical to doing
 	 * (...args) => f(g(h(...args))).
 	 */

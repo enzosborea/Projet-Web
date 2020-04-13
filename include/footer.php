@@ -42,7 +42,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
                 <h6 class="text-uppercase font-weight-bold">
-                    <a href="contact.php">Contact</a>
+                    <a href="../public/contact.php">Contact</a>
                 </h6>
             </div>
             <!-- Grid column -->
@@ -69,7 +69,7 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">
-        <a href="home.php"><img class="img-fluid" src="../../../assets/images/wamingo.png" alt="logo du site" width="55px"></a>
+        <a href="../index.php"><img class="img-fluid" src="../../../assets/images/wamingo.png" alt="logo du site" width="55px"></a>
     </div>
     <!-- Copyright -->
 

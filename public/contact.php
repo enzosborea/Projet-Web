@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html class="m-0" lang="fr">
-<?php require_once '../head.php' ?>
+<?php require_once '../include/head.php' ?>
 <body>
-<?php require_once '../navbar.php' ?>
+<?php require_once '../include/header.php' ?>
 <!--Section: Contact v.2-->
 <main>
     <div class="container">
@@ -105,6 +105,6 @@
 <!--Section: Contact v.2-->
 
 </main>
-<?php require_once '../footer.php'?>
+<?php require_once '../include/footer.php' ?>
 </body>
 </html>
