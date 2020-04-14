@@ -23,14 +23,7 @@
                     <!--Grid row-->
                     <div class="row">
 
-                        <!--Grid column-->
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control">
-                                <label for="name" class="">Votre nom</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
+
 
                         <!--Grid column-->
                         <div class="col-md-12">
@@ -49,7 +42,7 @@
                         <div class="col-md-12">
                             <div class="md-form mb-0">
                                 <input type="text" id="subject" name="subject" class="form-control">
-                                <label for="subject" class="">Sujet(s)</label>
+                                <label for="subject" class="">Motif(s)</label>
                             </div>
                         </div>
                     </div>
