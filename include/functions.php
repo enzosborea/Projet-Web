@@ -21,3 +21,4 @@ function log_only(){
         exit();
     }
 }
+?>

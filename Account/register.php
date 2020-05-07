@@ -2,6 +2,7 @@
 require_once '../include/functions.php';
 session_start();
 if(!empty($_POST)) {
+
     $errors = array();
     require_once '../include/db.php';
 

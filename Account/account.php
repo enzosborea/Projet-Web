@@ -1,10 +1,11 @@
 <?php session_start();
-require '../include/functions.php';
-log_only(); ?>
-<?php require '../include/head.php' ?>
+require '../include/functions.php'; ?>
 <?php require '../include/header.php' ?>
 
+<div class="container mt-4">
+    <h2>Mon espace</h2>
+</div>
 
-<h1>Profil</h1>
+
 
 

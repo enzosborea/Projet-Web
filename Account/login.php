@@ -5,25 +5,21 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
 
     $req = $pdo->prepare('SELECT * FROM users WHERE email = :email AND confirmed_at is not NULL');
     $req->execute(['email' => $_POST['email']]);
-    $user = $req->fetch();
-
-    if (password_verify($_POST['password'], $user ->password)) {
+    $user = $req->fetch(PDO::FETCH_OBJ);
+    if ($user && password_verify($_POST['password'], $user->password)) {
         session_start();
         $_SESSION['auth'] = $user;
         $_SESSION['flash']['success'] = 'Vous êtes connecté';
         header('Location account.php');
         exit();
-    }else {
+    } else {
             $_SESSION['flash']['danger'] = 'Identifiant ou mot de passe incorrect';
         }
-
-
 }
 ?>
 
 <?php require '../include/head.php' ?>
 <?php require '../include/header.php' ?>
-
 
 <div class="container">
     <h2 class="h1-responsive font-weight-bold text-center my-4">Se connecter</h2>

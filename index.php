@@ -1,12 +1,3 @@
-<?php
-if (session_status() == PHP_SESSION_NONE){
-    session_start();
-}
-?>
-<!DOCTYPE html>
-<html lang="fr">
-<?php require_once 'include/head.php' ?>
-<body>
 <?php require_once 'include/header.php' ?>
 <main>
     <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
