@@ -52,7 +52,7 @@ if (session_status() == PHP_SESSION_NONE){
                     <li class="nav-item"><a href="../public/bien.php" class="nav-link">Annonce</a></li>
                     <?php if (isset($_SESSION['auth'])): ?>
                     <li class="nav-item"><a href="#" class="nav-link">Mes biens</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Déposer une annonce</a></li>
+                    <li class="nav-item"><a href="../public/depose_annonce.php" class="nav-link">Déposer une annonce</a></li>
                     <?php endif; ?>
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto">

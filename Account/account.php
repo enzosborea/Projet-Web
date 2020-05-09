@@ -47,13 +47,15 @@ if (isset($_FILES['myFile'])) {
 
 $user_id = $_SESSION['auth']->id; // variable prenant l'id de la session avec l'utilisateur connecté
 
-$query = "SELECT image FROM users WHERE id = $user_id";
+$query = "SELECT * FROM users WHERE id = $user_id";
 
 $stmt = $pdo->query($query);
 
-$display_images = $stmt->fetchAll(PDO::FETCH_ASSOC); ?>
+$display_images = $stmt->fetch(PDO::FETCH_ASSOC);
 
+$display_images = $display_images['image']; ?>
 
+<img src="../assets/image_user/<?php echo ($display_images); ?>" alt="" width="120px">
 
 
 <?php
