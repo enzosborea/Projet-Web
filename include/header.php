@@ -19,7 +19,7 @@ if (session_status() == PHP_SESSION_NONE){
     <!-- title -->
 
     <!-- CSS & BOOSTRAP-->
-    <link rel="stylesheet" href="../../../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" hreflang="" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" hreflang="">
@@ -49,9 +49,9 @@ if (session_status() == PHP_SESSION_NONE){
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item"><a href="../index.php" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="../public/contact.php" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">A propos</a></li>
+                    <li class="nav-item"><a href="../public/bien.php" class="nav-link">Annonce</a></li>
                     <?php if (isset($_SESSION['auth'])): ?>
+                    <li class="nav-item"><a href="#" class="nav-link">Mes biens</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Déposer une annonce</a></li>
                     <?php endif; ?>
                 </ul>

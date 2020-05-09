@@ -9,12 +9,11 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
     if ($user && password_verify($_POST['password'], $user->password)) {
         session_start();
         $_SESSION['auth'] = $user;
-        $_SESSION['flash']['success'] = 'Vous êtes connecté';
-        header('Location account.php');
+        header('Location: account.php');
         exit();
     } else {
-            $_SESSION['flash']['danger'] = 'Identifiant ou mot de passe incorrect';
-        }
+        $_SESSION['flash']['success'] = 'Identifiant ou mot de passe incorrect';
+    }
 }
 ?>
 
@@ -46,7 +45,7 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             <label for="" class="">Email</label>
-                            <input type="email" name="email" class="form-control">
+                            <input type="text" name="email" class="form-control">
                         </div>
                     </div>
                     <!--Grid column-->
