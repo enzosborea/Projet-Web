@@ -45,13 +45,9 @@ if (isset($_FILES['myFile'])) {
 <?php
 
 $user_id = $_SESSION['auth']->id; // variable prenant l'id de la session avec l'utilisateur connecté
-
 $query = "SELECT * FROM users WHERE id = $user_id";
-
 $stmt = $pdo->query($query);
-
 $display_images = $stmt->fetch(PDO::FETCH_ASSOC);
-
 $display_images = $display_images['image']; ?>
 
 <?php
@@ -66,17 +62,13 @@ if (isset($_FILES['myFile']) && // est-ce qu'on a bien le fichier ?
 
 ?>
 
+
+
 <div class="container mt-4">
     <h1>Compte de <?php echo $_SESSION['auth']->first_name; ?></h1>
+    <h5 class="mt-4 mb-3">Argent disponible : <?php echo $_SESSION['auth']->sold . ' €'; ?></h5>
     <h5 class="mt-4 mb-3">Adresse-email : <?php echo $_SESSION['auth']->email?></h5>
-    <h5 class="mt-4 mb-3">Modifier votre photo de profil :</h5>
-    <img class="mb-3" src="../assets/image_user/<?php echo ($display_images); ?>" alt="" width="200px">
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="myFile" />
-        <input type="submit" value="Envoyer" />
-    </form>
 </div>
-
 <div class="container mt-4">
     <h5 class="mt-4 mb-3">Changer votre mot de passe :</h5>
     <form method="POST" action="">
@@ -89,5 +81,15 @@ if (isset($_FILES['myFile']) && // est-ce qu'on a bien le fichier ?
         <button class="btn btn-primary">Changer de mot de passe</button>
     </form>
 </div>
+<div class="container mt-4">
+    <h5 class="mt-2 mb-3">Modifier votre photo de profil :</h5>
+    <img class="mb-3" src="../assets/image_user/<?php echo ($display_images); ?>" alt="" width="200px">
+    <form method="POST" enctype="multipart/form-data" class="mb-5">
+        <input type="file" name="myFile" />
+        <input type="submit" value="Envoyer" />
+    </form>
+</div>
+
+<?php require_once '../include/footer.php' ?>
 
 

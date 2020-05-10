@@ -30,7 +30,7 @@ if(!empty($_POST)) {
     }
 
     if (empty($errors)) {
-        $req = $pdo->prepare("INSERT INTO users SET first_name = ?, last_name = ?,email = ?, password = ?, confirmation_token = ?");
+        $req = $pdo->prepare("INSERT INTO users SET first_name = ?, last_name = ?,email = ?, password = ?, confirmation_token = ?, sold = 3000");
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
         $token = str_random(60);
         $req->execute([$_POST['first_name'], $_POST['last_name'], $_POST['email'], $password, $token]);

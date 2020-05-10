@@ -760,45 +760,11 @@
     <user id="238" parent="1" name="wamingo">
       <Host>localhost</Host>
     </user>
-    <table id="239" parent="8" name="images">
-      <Collation>utf8_unicode_ci</Collation>
-    </table>
-    <table id="240" parent="8" name="properties"/>
-    <table id="241" parent="8" name="property_reviews"/>
-    <table id="242" parent="8" name="reservation"/>
-    <table id="243" parent="8" name="users"/>
-    <column id="244" parent="239" name="id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="245" parent="239" name="file_name">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="246" parent="239" name="uploaded_on">
-      <Position>3</Position>
-      <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="247" parent="239" name="status">
-      <Position>4</Position>
-      <DataType>enum(&apos;1&apos;, &apos;0&apos;)|0e</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>&apos;1&apos;</DefaultExpression>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="248" parent="239" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="249" parent="240" name="id">
+    <table id="239" parent="8" name="properties"/>
+    <table id="240" parent="8" name="property_reviews"/>
+    <table id="241" parent="8" name="reservation"/>
+    <table id="242" parent="8" name="users"/>
+    <column id="243" parent="239" name="id">
       <Position>1</Position>
       <Comment>Clé primaire
 </Comment>
@@ -807,206 +773,218 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="240" name="title">
+    <column id="244" parent="239" name="title">
       <Position>2</Position>
       <Comment>Nom de l’annonce</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="240" name="description">
+    <column id="245" parent="239" name="description">
       <Position>3</Position>
       <Comment>Description de l’annonce</Comment>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="252" parent="240" name="address">
+    <column id="246" parent="239" name="address">
       <Position>4</Position>
       <Comment>Adresse de l’annonce</Comment>
-      <DataType>mediumtext|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="240" name="bed_count">
+    <column id="247" parent="239" name="postal">
       <Position>5</Position>
+      <Comment>CodePostal de l&apos;annonce</Comment>
+      <DataType>int(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="248" parent="239" name="ville">
+      <Position>6</Position>
+      <Comment>Ville de l&apos;annonce</Comment>
+      <DataType>char(40)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="249" parent="239" name="bed_count">
+      <Position>7</Position>
       <Comment>Nombre de lit (x)</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="240" name="bathroom_count">
-      <Position>6</Position>
+    <column id="250" parent="239" name="bathroom_count">
+      <Position>8</Position>
       <Comment>Nombre de salle de bain (x)</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="240" name="toilet_count">
-      <Position>7</Position>
+    <column id="251" parent="239" name="toilet_count">
+      <Position>9</Position>
       <Comment>Nombre de toilette (x)</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="240" name="swimming pool">
-      <Position>8</Position>
+    <column id="252" parent="239" name="swimming pool">
+      <Position>10</Position>
       <Comment>piscine oui/non</Comment>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="240" name="start_date">
-      <Position>9</Position>
+    <column id="253" parent="239" name="start_date">
+      <Position>11</Position>
       <Comment>date début de séjour</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="240" name="end_date">
-      <Position>10</Position>
+    <column id="254" parent="239" name="end_date">
+      <Position>12</Position>
       <Comment>date fin de séjour</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="240" name="price_night">
-      <Position>11</Position>
+    <column id="255" parent="239" name="price_night">
+      <Position>13</Position>
       <Comment>prix de la nuit 
 </Comment>
       <DataType>decimal(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="240" name="users_id">
-      <Position>12</Position>
+    <column id="256" parent="239" name="users_id">
+      <Position>14</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="261" parent="240" name="cities_id">
-      <Position>13</Position>
+    <column id="257" parent="239" name="cities_id">
+      <Position>15</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="262" parent="240" name="fk_properties_users">
+    <index id="258" parent="239" name="fk_properties_users">
       <ColNames>users_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="263" parent="240" name="fk_properties_cities1">
+    <index id="259" parent="239" name="cities_id">
       <ColNames>cities_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="264" parent="240" name="PRIMARY">
+    <key id="260" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="265" parent="240" name="fk_properties_users">
+    <foreign-key id="261" parent="239" name="fk_properties_users">
       <ColNames>users_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="266" parent="240" name="fk_properties_cities1">
+    <foreign-key id="262" parent="239" name="fk_properties_cities1">
       <ColNames>cities_id</ColNames>
       <RefTableName>cities</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="267" parent="241" name="id">
+    <column id="263" parent="240" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="241" name="comment">
+    <column id="264" parent="240" name="comment">
       <Position>2</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="241" name="rating">
+    <column id="265" parent="240" name="rating">
       <Position>3</Position>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="241" name="created">
+    <column id="266" parent="240" name="created">
       <Position>4</Position>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="271" parent="241" name="properties_id">
+    <column id="267" parent="240" name="properties_id">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="272" parent="241" name="fk_property_reviews_properties1">
+    <index id="268" parent="240" name="fk_property_reviews_properties1">
       <ColNames>properties_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="273" parent="241" name="PRIMARY">
+    <key id="269" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="274" parent="241" name="fk_property_reviews_properties1">
+    <foreign-key id="270" parent="240" name="fk_property_reviews_properties1">
       <ColNames>properties_id</ColNames>
       <RefTableName>properties</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="275" parent="242" name="reserv_id">
+    <column id="271" parent="241" name="reserv_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="242" name="start_date">
+    <column id="272" parent="241" name="start_date">
       <Position>2</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="242" name="end_date">
+    <column id="273" parent="241" name="end_date">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="278" parent="242" name="properties_id">
+    <column id="274" parent="241" name="properties_id">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="279" parent="242" name="users_id">
+    <column id="275" parent="241" name="users_id">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="242" name="price">
+    <column id="276" parent="241" name="price">
       <Position>6</Position>
       <DataType>decimal(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="242" name="number_r">
+    <column id="277" parent="241" name="number_r">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="282" parent="242" name="fk_reservation_properties1">
+    <index id="278" parent="241" name="fk_reservation_properties1">
       <ColNames>properties_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="283" parent="242" name="fk_reservation_users1">
+    <index id="279" parent="241" name="fk_reservation_users1">
       <ColNames>users_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="284" parent="242" name="PRIMARY">
+    <key id="280" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>reserv_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="285" parent="242" name="fk_reservation_properties1">
+    <foreign-key id="281" parent="241" name="fk_reservation_properties1">
       <ColNames>properties_id</ColNames>
       <RefTableName>properties</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="286" parent="242" name="fk_reservation_users1">
+    <foreign-key id="282" parent="241" name="fk_reservation_users1">
       <ColNames>users_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="287" parent="243" name="id">
+    <column id="283" parent="242" name="id">
       <Position>1</Position>
       <Comment>Clé primaire</Comment>
       <DataType>int(11)|0s</DataType>
@@ -1014,54 +992,55 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="243" name="first_name">
+    <column id="284" parent="242" name="first_name">
       <Position>2</Position>
       <Comment>Prénom</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="243" name="last_name">
+    <column id="285" parent="242" name="last_name">
       <Position>3</Position>
       <Comment>Nom</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="243" name="email">
+    <column id="286" parent="242" name="email">
       <Position>4</Position>
       <Comment>Mail</Comment>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="243" name="password">
+    <column id="287" parent="242" name="password">
       <Position>5</Position>
       <Comment>Mot de passe</Comment>
       <DataType>tinytext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="243" name="sold">
+    <column id="288" parent="242" name="sold">
       <Position>6</Position>
       <Comment>solde du client</Comment>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="293" parent="243" name="confirmation_token">
+    <column id="289" parent="242" name="confirmation_token">
       <Position>7</Position>
       <Comment>clé confirmation</Comment>
       <DataType>varchar(60)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="294" parent="243" name="confirmed_at">
+    <column id="290" parent="242" name="confirmed_at">
       <Position>8</Position>
       <Comment>date où la clé est confirmée</Comment>
       <DataType>datetime|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="243" name="image">
+    <column id="291" parent="242" name="image">
       <Position>9</Position>
+      <Comment>photo de profil</Comment>
       <DataType>varchar(1000)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="296" parent="243" name="PRIMARY">
+    <key id="292" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

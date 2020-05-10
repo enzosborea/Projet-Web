@@ -62,8 +62,17 @@ if (session_status() == PHP_SESSION_NONE){
                         <li class="nav-item"><a href="../Account/account.php" class="nav-link">Mon compte</a></li>
                         <li class="nav-item avatar">
                             <a class="nav-link p-0" href="../Account/account.php">
-                                <img src="../assets/image_user/<?php echo ($display_images); ?>" class="rounded-circle z-depth-0"
-                                         alt="avatar image" height="35">
+                                <img src="../assets/image_user/<?php
+                                $user_id = $_SESSION['auth']->id; // variable prenant l'id de la session avec l'utilisateur connecté
+                                $query = "SELECT * FROM users WHERE id = $user_id"; // prends tout de la table users où l'utilisateur connecté corresponds à l'id
+                                $stmt = $pdo->query($query);
+                                $display_images = $stmt->fetch(PDO::FETCH_ASSOC);
+                                $display_images = $display_images['image']; // la variable display_image prends le champs image de la bdd pour l'utilisateur
+                                if ($display_images != null){ // affiche l'avatar de l'utilisateur si le champ image de celui si n'est pas vide
+                                    echo ($display_images);
+                                } else {
+                                    echo ('default-avatar.jpg');
+                                }// sinon rien ?>" class="rounded-circle z-depth-0" alt="avatar image" height="35">
                             </a>
                         </li>
                     <?php else: ?>

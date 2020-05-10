@@ -10,19 +10,7 @@ function str_random($lenght){ // fonction pour générer une chaîne de caractè
 
 }
 
-function avatar(){
-$user_id = $_SESSION['auth']->id; // variable prenant l'id de la session avec l'utilisateur connecté
-
-$query = "SELECT * FROM users WHERE id = $user_id";
-
-$stmt = $pdo->query($query);
-
-$display_images = $stmt->fetch(PDO::FETCH_ASSOC);
-
-$display_images = $display_images['image'];
-}
-
-function log_only(){
+    function log_only(){
     if (!isset($_SESSION['auth'])){
         if (session_status() == PHP_SESSION_NONE){
             session_start();
