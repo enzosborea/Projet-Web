@@ -3,6 +3,7 @@ if (session_status() == PHP_SESSION_NONE){
     session_start();
 }
 ?>
+<?php require_once 'db.php'?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -59,6 +60,12 @@ if (session_status() == PHP_SESSION_NONE){
                     <?php if (isset($_SESSION['auth'])):?>
                         <li class="nav-item"><a href="../Account/logout.php" class="nav-link">Se déconnecter</a></li>
                         <li class="nav-item"><a href="../Account/account.php" class="nav-link">Mon compte</a></li>
+                        <li class="nav-item avatar">
+                            <a class="nav-link p-0" href="../Account/account.php">
+                                <img src="../assets/image_user/<?php echo ($display_images); ?>" class="rounded-circle z-depth-0"
+                                         alt="avatar image" height="35">
+                            </a>
+                        </li>
                     <?php else: ?>
                         <li class="nav-item"><a href="../Account/register.php" class="nav-link">S'inscrire</a></li>
                         <li class="nav-item"><a href="../Account/login.php" class="nav-link">Se connecter</a></li>

@@ -30,17 +30,16 @@ if (isset($_FILES['myFile'])) {
 
     // On bouge le fichier temporaire dans la destination
     if (move_uploaded_file($file['tmp_name'], $destination)) {
-        echo $filename . " correctement enregistré<br />";
+        $user_id = $_SESSION['auth']->id;
+
+        $query = "UPDATE users SET image = :filename WHERE id = :id ";
+        $stmt = $pdo->prepare($query);
+        return $stmt->execute([
+            "filename" => $filename,
+            "id" => $user_id
+        ]);
     }
 
-    $user_id = $_SESSION['auth']->id;
-
-    $query = "UPDATE users SET image = :filename WHERE id = :id ";
-    $stmt = $pdo->prepare($query);
-    return $stmt->execute([
-        "filename" => $filename,
-        "id" => $user_id
-    ]);
 }?>
 
 <?php
@@ -54,9 +53,6 @@ $stmt = $pdo->query($query);
 $display_images = $stmt->fetch(PDO::FETCH_ASSOC);
 
 $display_images = $display_images['image']; ?>
-
-<img src="../assets/image_user/<?php echo ($display_images); ?>" alt="" width="120px">
-
 
 <?php
 const USER_IMG_DIR = "../assets/image_user/";
@@ -73,7 +69,8 @@ if (isset($_FILES['myFile']) && // est-ce qu'on a bien le fichier ?
 <div class="container mt-4">
     <h1>Compte de <?php echo $_SESSION['auth']->first_name; ?></h1>
     <h5 class="mt-4 mb-3">Adresse-email : <?php echo $_SESSION['auth']->email?></h5>
-    <h5 class="mt-4 mb-3">Insérer une photo de profil :</h5>
+    <h5 class="mt-4 mb-3">Modifier votre photo de profil :</h5>
+    <img class="mb-3" src="../assets/image_user/<?php echo ($display_images); ?>" alt="" width="200px">
     <form method="POST" enctype="multipart/form-data">
         <input type="file" name="myFile" />
         <input type="submit" value="Envoyer" />

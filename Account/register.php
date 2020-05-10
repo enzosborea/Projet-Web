@@ -43,7 +43,6 @@ if(!empty($_POST)) {
 }
 ?>
 
-<?php require '../include/head.php' ?>
 <?php require '../include/header.php' ?>
 
 
