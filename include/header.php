@@ -12,14 +12,16 @@ if (session_status() == PHP_SESSION_NONE){
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="colorlib.com">
+    <meta name="author" content="wamingo">
+    <meta name="description" content="Site de réservation en ligne de biens pour particuliers" />
     <!-- Meta -->
 
     <!-- title -->
-    <title>Wamingo</title>
+    <title>Wamingo | Réservation en ligne</title>
     <!-- title -->
 
     <!-- CSS & BOOSTRAP-->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
     <link rel="stylesheet" href="../assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" hreflang="" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">

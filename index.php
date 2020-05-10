@@ -18,7 +18,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h1 class="h1-responsive">Wamingo</h1>
-                    <p class="text-responsive">Votre site de reservation</p>
+                    <h5 class="text-responsive">Reservation de biens pour particuliers</h5>
                 </div>
             </div>
             <div class="carousel-item">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h1 class="h1-responsive">Wamingo</h1>
-                    <p class="text-responsive">Votre site de reservation</p>
+                    <h5 class="text-responsive">Reservation de biens pour particuliers</h5>
                 </div>
             </div>
             <div class="carousel-item">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h1 class="h1-responsive">Wamingo</h1>
-                    <p class="text-responsive">Votre site de reservation</p>
+                    <h5 class="text-responsive">Reservation de biens pour particuliers</h5>
                 </div>
             </div>
         </div>
