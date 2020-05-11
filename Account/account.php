@@ -4,8 +4,8 @@ require '../include/functions.php'; ?>
 <?php require_once '../include/db.php' ?>
 <?php if (!empty($_POST)){
 
-    if ($_POST['password'] != $_POST['password_confirm']){
-         echo ("Les mots de passes ne correspondent pas");
+    if ($_POST['password'] != $_POST['password_confirm'] || ($_POST['password']) == null){
+         echo ("Les mots de passes ne correspondent pas ou ne sont pas valide");
     }else {
         $user_id = $_SESSION['auth']->id;
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT);

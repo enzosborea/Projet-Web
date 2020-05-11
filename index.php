@@ -12,7 +12,7 @@
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <div class="view">
-                    <img class="d-block w-100" src="../assets/images/firstslide.jpg"
+                    <img class="d-block w-100" src="assets/images/firstslide.jpg"
                          alt="Premiere slide">
                     <div class="mask rgba-black-light"></div>
                 </div>
@@ -24,7 +24,7 @@
             <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view">
-                    <img class="d-block w-100" src="../assets/images/secondslide.jpg"
+                    <img class="d-block w-100" src="assets/images/secondslide.jpg"
                          alt="Deuxieme slide">
                     <div class="mask rgba-black-light"></div>
                 </div>
@@ -36,7 +36,7 @@
             <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view">
-                    <img class="d-block w-100" src="../assets/images/thirdslide.jpg"
+                    <img class="d-block w-100" src="assets/images/thirdslide.jpg"
                          alt="troisieme slide">
                     <div class="mask rgba-black-light"></div>
                 </div>
