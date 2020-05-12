@@ -9,7 +9,7 @@ $query->bindValue(':num', $_GET['numID'], PDO::PARAM_INT);
 //exécution
 $execute = $query->execute();?>
 
-<h1 class="mt-4 ml-4">Votre annonce à bien été supprimé.<h1>
+<h2 class="mt-4 ml-4">Votre annonce à bien été supprimé.<h2>
 
 
 
