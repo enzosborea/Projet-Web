@@ -11,9 +11,10 @@
                 <img class="card-img-top" src="../assets/images/maison1.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">titre</h5>
-                    <p class="card-text">desciption</p>
+                    <p class="card-text">description</p>
                     <a href="#" class="btn btn-primary">Voir</a>
                 </div>
             </div>
         </div>
 </section>
+<?php require_once '../include/footer.php' ?>

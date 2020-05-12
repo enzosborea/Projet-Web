@@ -43,8 +43,6 @@ if(!empty($_POST)) {
     if (empty($errors)) {
         $req = $pdo->prepare(" INSERT INTO properties SET title = ?, description = ?,address = ?, ville = ?, postal = ?, price_night = ?,bed_count = ?, person = ?, users_id = $user->id");
         $req->execute([$_POST['title'], $_POST['description'], $_POST['address'],$_POST['ville'], $_POST['postal'], $_POST['price_night'], $_POST['bed_count'], $_POST['person']]);
-        header('Location: depose_annonce.php');
-        $_SESSION['flash']['success'] = "Annonce déposer avec succès";
         exit();
     }
 }
@@ -133,7 +131,7 @@ if(!empty($_POST)) {
                         </div>
 
                         <div class="text-center text-md-left mb-5 mt-2">
-                            <button class="btn btn-primary" type="submit">Déposer</button>
+                            <button class="btn btn-green" type="submit">Déposer</button>
                         </div>
                     </form>
                 </div>
