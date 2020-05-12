@@ -52,9 +52,9 @@ if (session_status() == PHP_SESSION_NONE){
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item"><a href="../index.php" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="../public/bien.php" class="nav-link">Annonce</a></li>
+                    <li class="nav-item"><a href="../public/annonce.php" class="nav-link">Annonce</a></li>
                     <?php if (isset($_SESSION['auth'])): ?>
-                    <li class="nav-item"><a href="#" class="nav-link">Mes biens</a></li>
+                    <li class="nav-item"><a href="../public/my_annonce.php" class="nav-link">Mes biens</a></li>
                     <li class="nav-item"><a href="../public/depose_annonce.php" class="nav-link">Déposer une annonce</a></li>
                     <?php endif; ?>
                 </ul>

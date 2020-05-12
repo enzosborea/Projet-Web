@@ -35,10 +35,14 @@ if(!empty($_POST)) {
         $errors['price_night'] = 'Prix obligatoire';
     }
 
+    if (empty($_POST['person'])) {
+        $errors['person'] = 'Prix obligatoire';
+    }
+
 
     if (empty($errors)) {
-        $req = $pdo->prepare(" INSERT INTO properties SET title = ?, description = ?,address = ?, ville = ?, postal = ?, price_night = ?,bed_count = ?, users_id = $user->id");
-        $req->execute([$_POST['title'], $_POST['description'], $_POST['address'],$_POST['ville'], $_POST['postal'], $_POST['price_night'], $_POST['bed_count']]);
+        $req = $pdo->prepare(" INSERT INTO properties SET title = ?, description = ?,address = ?, ville = ?, postal = ?, price_night = ?,bed_count = ?, person = ?, users_id = $user->id");
+        $req->execute([$_POST['title'], $_POST['description'], $_POST['address'],$_POST['ville'], $_POST['postal'], $_POST['price_night'], $_POST['bed_count'], $_POST['person']]);
         header('Location: depose_annonce.php');
         $_SESSION['flash']['success'] = "Annonce déposer avec succès";
         exit();
@@ -119,6 +123,14 @@ if(!empty($_POST)) {
                         </div>
                         <!--Grid row-->
 
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <div class="mb-0">
+                                    <label for="">Nombre de personnes(s) :</label>
+                                    <input type="number" name="person" class="form-control">
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="text-center text-md-left mb-5 mt-2">
                             <button class="btn btn-primary" type="submit">Déposer</button>
