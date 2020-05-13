@@ -36,7 +36,7 @@ if(!empty($_POST)) {
     }
 
     if (empty($_POST['person'])) {
-        $errors['person'] = 'Prix obligatoire';
+        $errors['person'] = 'Nombre de personne obligatoire';
     }
 
 
@@ -49,6 +49,16 @@ if(!empty($_POST)) {
 ?>
 <div class="container">
             <h2 class="h1-responsive font-weight-bold text-center my-5">Deposer une annonce</h2>
+            <?php if (!empty($errors)): ?>
+                <div class="alert alert-danger">
+                    <p>Vous n'avez pas rempli le formulaire correctement</p>
+                    <ul>
+                        <?php foreach ($errors as $error): ?>
+                            <li><?= $error; ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+            <?php endif; ?>
             <div class="row">
                 <!--Grid column-->
                 <div class="col-md-12 mb-md-0 mb-5 ">
@@ -69,7 +79,7 @@ if(!empty($_POST)) {
                             <div class="col-md-12 mb-3">
                                 <div class="mb-0">
                                     <label for="exampleFormControlTextarea1" class="">Description :</label>
-                                    <textarea rows="3" <input type="text" name="description" class="form-control"> </textarea>
+                                    <input type="text" name="description" class="form-control">
                                 </div>
                             </div>
 
@@ -138,3 +148,5 @@ if(!empty($_POST)) {
             </div>
  </div>
 <?php require_once '../include/footer.php' ?>
+</body>
+</html>

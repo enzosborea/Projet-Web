@@ -3,15 +3,17 @@ require '../include/functions.php'; ?>
 <?php require '../include/header.php' ?>
 <?php require_once '../include/db.php' ?>
 <?php if (!empty($_POST)){
+    $errors = array();
 
     if ($_POST['password'] != $_POST['password_confirm'] || ($_POST['password']) == null){
-         echo ("Les mots de passes ne correspondent pas ou ne sont pas valide");
+         $errors['title'] = "Les mots de passes ne correspondent pas ou ne sont pas valide";
+;
     }else {
         $user_id = $_SESSION['auth']->id;
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
         require_once '../include/db.php';
         $pdo->prepare('UPDATE users SET password = ?')->execute([$password]);
-        echo  ("Le mot de passe a bien été modifié");
+        $_SESSION['flash']['success'] = "ok";
     }
 }
 
@@ -65,6 +67,16 @@ if (isset($_FILES['myFile']) && // est-ce qu'on a bien le fichier ?
 
 
 <div class="container mt-4">
+    <?php if (!empty($errors)): ?>
+        <div class="alert alert-danger">
+            <p>Erreur de modifications</p>
+            <ul>
+                <?php foreach ($errors as $error): ?>
+                    <li><?= $error; ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    <?php endif; ?>
     <h1>Compte de <?php echo $_SESSION['auth']->first_name; ?></h1>
     <h5 class="mt-4 mb-3">Argent disponible : <?php echo $_SESSION['auth']->sold . ' €'; ?></h5>
     <h5 class="mt-4 mb-3">Adresse-email : <?php echo $_SESSION['auth']->email?></h5>
@@ -91,5 +103,7 @@ if (isset($_FILES['myFile']) && // est-ce qu'on a bien le fichier ?
 </div>
 
 <?php require_once '../include/footer.php' ?>
+</body>
+</html>
 
 

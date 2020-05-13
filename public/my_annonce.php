@@ -1,12 +1,13 @@
 <?php require_once '../include/header.php'; ?>
 <?php require_once '../include/db.php';
-$user_id = $_SESSION['auth']->id;
 
+$user_id = $_SESSION['auth']->id;
 $query = "SELECT * FROM properties WHERE users_id = $user_id ORDER BY id DESC ";
 $stmt = $pdo->prepare($query);
 $stmt->execute();
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 <div class="shadow p-3 bg-white rounded">
     <h2 class="h1-responsive font-weight-bold text-center my-4">Mes biens</h2>
 </div>
@@ -27,3 +28,5 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
 <?php } ?>
 <?php require_once '../include/footer.php' ?>
+</body>
+</html>

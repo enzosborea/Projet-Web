@@ -3,6 +3,7 @@
 <?php
 $destination = strtolower($_GET['destination'] ?? "");
 
+
 $query = "SELECT * FROM properties WHERE id";
     if ($price != "" ) {
         $query = $query . " AND price_night LIKE :price_night";}
@@ -37,4 +38,6 @@ $query = "SELECT * FROM properties WHERE id";
         </div>
         <?php } ?>
 </section>
-<?php require_once '../include/footer.php';
+<?php require_once '../include/footer.php';?>
+</body>
+</html>

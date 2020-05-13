@@ -17,9 +17,7 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
 }
 ?>
 
-<?php require '../include/head.php' ?>
 <?php require '../include/header.php' ?>
-
 <div class="container">
     <h2 class="h1-responsive font-weight-bold text-center my-4">Se connecter</h2>
     <?php if (!empty($errors)): ?>
@@ -71,3 +69,5 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
         </div>
     </div>
 </div>
+</body>
+</html>

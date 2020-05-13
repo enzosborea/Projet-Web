@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html class="m-0" lang="fr">
-<?php require_once '../include/head.php' ?>
-<body>
 <?php require_once '../include/header.php' ?>
 <!--Section: Contact v.2-->
 <main>
