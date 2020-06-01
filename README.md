@@ -1,6 +1,6 @@
 # Projet-Airbnb Wamingo
 
--- Fichier d'instruction :
+Fichier d'instruction :
 
 - Version php 7.4.2
 - Version MAMP 5.7
