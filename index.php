@@ -18,7 +18,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h1 class="h1-responsive">Wamingo</h1>
-                    <h5 class="text-responsive">Reservation de biens pour particuliers</h5>
+                    <h5 class="text-responsive">Reservation de bien pour particulier</h5>
                 </div>
             </div>
             <div class="carousel-item">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h1 class="h1-responsive">Wamingo</h1>
-                    <h5 class="text-responsive">Reservation de biens pour particuliers</h5>
+                    <h5 class="text-responsive">Reservation de bien pour particulier</h5>
                 </div>
             </div>
             <div class="carousel-item">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h1 class="h1-responsive">Wamingo</h1>
-                    <h5 class="text-responsive">Reservation de biens pour particuliers</h5>
+                    <h5 class="text-responsive">Reservation de bien pour particulier</h5>
                 </div>
             </div>
         </div>
@@ -146,22 +146,19 @@
                 <a data-toggle="collapse" data-parent="#accordionEx194" href="#collapse4" aria-expanded="true"
                    aria-controls="collapse4">
                     <h3 class="mb-0 blue-text">
-                        Qui sommes nous ? <div class="animated-icon1 float-right mt-1"><span></span><span></span><span></span></div>
+                        Devenir hôte ? <div class="animated-icon1 float-right mt-1"><span></span><span></span><span></span></div>
                     </h3>
                 </a>
             </div>
 
             <!-- Card body -->
             <div id="collapse4" class="collapse show" role="tabpanel" aria-labelledby="heading4" data-parent="#accordionEx194">
-                <div class="card-body pt-0">
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                        accusamus labore sustainable VHS.</p>
+                <div class="card-body pt-2">
+                    <p> Wamingo vous permet, de manière simple, de mettre votre espace disponible en location, qu'il s'agisse d'une chambre ou d'un logement entier.
+                        Vous avez un contrôle total sur vos disponibilités, vos prix. Si vous disposez d'une chambre supplémentaire, d'un logement entier ou d'expertise en hébergement,
+                        vous pouvez gagner de l'argent en les partageant avec des voyageurs du monde entier.
+                        Vous pouvez héberger des voyageurs dans votre logement, organiser des expériences ou faire les deux. Vous décidez à quel moment vous souhaitez héberger des voyageurs..
+                    </p>
                 </div>
             </div>
         </div>
@@ -181,15 +178,12 @@
 
             <!-- Card body -->
             <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx194">
-                <div class="card-body pt-0">
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                        accusamus labore sustainable VHS.</p>
+                <div class="card-body pt-2">
+                    <p>
+                        Lorsque vous réservez un logement sur Wamingo, vous prenez des dispositions pour séjourner au domicile de quelqu'un. Chaque hôte a son propre style d'hospitalité,
+                        à commencer par la façon dont il aime faire connaissance avec ses voyageurs. Certains hôtes veulent valider les demandes de réservation,
+                        là où d'autres se sentent à l'aise en vous laissant faire une réservation instantanée de leur logement sans que vous ayez à attendre leur approbation.
+                    </p>
                 </div>
             </div>
         </div>
@@ -203,22 +197,17 @@
                 <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse6" aria-expanded="false"
                    aria-controls="collapse6">
                     <h3 class="mb-0 blue-text">
-                        Voyager ! <div class="animated-icon1 float-right mt-1"><span></span><span></span><span></span></div>
+                        Wamingo ! <div class="animated-icon1 float-right mt-1"><span></span><span></span><span></span></div>
                     </h3>
                 </a>
             </div>
 
             <!-- Card body -->
             <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx194">
-                <div class="card-body pt-0">
-                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                        wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                        accusamus labore sustainable VHS.</p>
+                <div class="card-body pt-2">
+                    <p>
+                        Wamingo crée des liens entre les personnes grâce à la possibilité de réserver des logements et des activités partout dans le monde.
+                        Les hôtes constituent le moteur de la communauté et fournissent aux voyageurs l'occasion unique de voyager comme s'ils étaient chez eux.</p>
                 </div>
             </div>
         </div>

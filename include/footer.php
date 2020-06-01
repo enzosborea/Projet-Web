@@ -26,14 +26,6 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
                 <h6 class="text-uppercase font-weight-bold">
-                    <a href="#!">Awards</a>
-                </h6>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2 mb-3">
-                <h6 class="text-uppercase font-weight-bold">
                     <a href="#!">Aide</a>
                 </h6>
             </div>
@@ -56,11 +48,7 @@
 
             <!-- Grid column -->
             <div class="col-md-8 col-12 mt-3">
-                <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                    explicabo.
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                <p style="line-height: 1.7rem">Wamingo vous permet, de manière simple, de mettre votre espace disponible en location, qu'il s'agisse d'une chambre ou d'un logement entier.</p>
             </div>
             <!-- Grid column -->
         </div>
