@@ -41,7 +41,7 @@ Modifier la configuration de PHP pour qu'il envoit les emails en utilisant ce se
 
 - Lancement de MailDev avec un le port 2525 (Terminal) :
 
-       maildev -s 2525
+      maildev -s 2525
        
 
 -- Utilisation de MAMP :
@@ -50,7 +50,7 @@ Modifier la configuration de PHP pour qu'il envoit les emails en utilisant ce se
 
 -- Lancement du site depuis votre IDE :
 
-       php -S localhost:8000
+      php -S localhost:8000
 
 
 
