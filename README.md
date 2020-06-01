@@ -41,7 +41,7 @@ Modifier la configuration de PHP pour qu'il envoit les emails en utilisant ce se
       SMTP = localhost
       smtp_port = 2525
 
-- Lancement de MailDev avec un le port 2525 (Terminal) :
+- Lancement de MailDev avec le port 2525 (Terminal) :
 
       maildev -s 2525
        
