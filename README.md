@@ -82,17 +82,17 @@ Fichier d'instruction (Windows) :
 
 - ouvrez le CMD puis entrer :
 
-    npm install -g maildev
+      npm install -g maildev
 
 -- Pour lancer Maildev (Windows) :
 
 - ouvrez le CMD puis entrer :
 
-    maildev
+      maildev
 
 - verifier qu'il foctionne (dans votre navigateur web) :
 
-    localhost:1080
+      localhost:1080
 
 Modifier la configuration de PHP pour qu'il envoit les emails en utilisant ce serveur SMTP.
     
@@ -110,7 +110,7 @@ OU
 
 - Lancement de MailDev avec le port 2525 (CMD) :
 
-      maildev -s 2525
+       maildev -s 2525
        
 -- Utilisation de WAMP :
 
