@@ -1,17 +1,20 @@
 # Projet-Airbnb Wamingo
 
-Fichier d'instructions
+-- Fichier d'instruction :
 
-- Utilisation de MAMP :
+- Version php 7.4.2
+- Version MAMP 5.7
+- Version MySQL 5.7.26
 
-- Installation de MailDev :
+-- Utilisation de MAMP :
 
-- Paramétrage MailDev :
+-- Installation de MailDev :
+
+-- Paramétrage MailDev :
     
-    Modifier le fichier php.ini qui est utiliser
-   
-    Indiquer le port smtp : 2525 pour recevoir les mails 
-    
+- Modifier le fichier php.ini --> MAMP/conf/php7.4.2/php.ini
+
+- Indiquer le port smtp : 2525 pour recevoir les mails 
 
 - Lancement de MailDev depuis un terminal :
 
