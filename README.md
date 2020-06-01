@@ -8,7 +8,11 @@
 
 -- Utilisation de MAMP :
 
+- Lancer le serveur depuis MAMP --> Start Servers
+   
 -- Installation de MailDev :
+
+    npm install -g maildev
 
 -- Paramétrage MailDev :
     
@@ -18,7 +22,7 @@
 
 - Lancement de MailDev depuis un terminal :
 
-    maildev -s 2525
+      maildev -s 2525
 
 - Lancement du site :
 
