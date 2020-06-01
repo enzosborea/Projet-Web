@@ -1,10 +1,10 @@
 # Projet-Airbnb Wamingo
 
-
-
 Fichier d'instruction (macOS) :
 
-- Version php 7.4.2
+- Pré-requis (PHP, MAMP, mySQL, Node.js, npm)
+
+- Version PHP 7.4.2
 - Version MAMP 5.7
 - Version MySQL 5.7.26
 - Version Node.js 12.16.2
