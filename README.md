@@ -26,7 +26,7 @@ Fichier d'instruction :
    
 -- Installation de MailDev :
 
-    npm install -g maildev
+      npm install -g maildev
 
 -- Paramétrage MailDev :
 
