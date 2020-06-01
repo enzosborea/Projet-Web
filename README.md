@@ -110,7 +110,7 @@ OU
 
 - Lancement de MailDev avec le port 2525 (CMD) :
 
-       maildev -s 2525
+      maildev -s 2525
        
 -- Utilisation de WAMP :
 
