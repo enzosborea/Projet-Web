@@ -1,5 +1,4 @@
-# Projet-Web
-Wamingo
+# Projet-Airbnb Wamingo
 
 Fichier d'instructions
 
