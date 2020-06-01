@@ -1,6 +1,8 @@
 # Projet-Airbnb Wamingo
 
-Fichier d'instruction :
+
+
+Fichier d'instruction (macOS) :
 
 - Version php 7.4.2
 - Version MAMP 5.7
@@ -30,7 +32,7 @@ Fichier d'instruction :
 
 -- Paramétrage MailDev :
 
-Modifier la configuration de PHP pour qu'il envoit les emails en utilisant ce serveur SMTP
+Modifier la configuration de PHP pour qu'il envoit les emails en utilisant ce serveur SMTP.
     
 - Modifier le fichier php.ini --> MAMP/conf/php7.4.2/php.ini
 
@@ -43,7 +45,6 @@ Modifier la configuration de PHP pour qu'il envoit les emails en utilisant ce se
 
       maildev -s 2525
        
-
 -- Utilisation de MAMP :
 
 - Lancer le serveur depuis MAMP --> Start Servers
