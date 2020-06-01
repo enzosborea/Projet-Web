@@ -40,6 +40,8 @@ if (session_status() == PHP_SESSION_NONE){
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
     <!-- JS/BOOSTRAP -->
+
+    
 </head>
 <body>
 <header>
@@ -60,10 +62,10 @@ if (session_status() == PHP_SESSION_NONE){
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                     <?php if (isset($_SESSION['auth'])):?>
-                        <li class="nav-item"><a href="../Account/logout.php" class="nav-link">Se déconnecter</a></li>
-                        <li class="nav-item"><a href="../Account/account.php" class="nav-link">Mon compte</a></li>
+                        <li class="nav-item"><a href="/Account/logout.php" class="nav-link">Se déconnecter</a></li>
+                        <li class="nav-item"><a href="/Account/account.php" class="nav-link">Mon compte</a></li>
                         <li class="nav-item avatar">
-                            <a class="nav-link p-0" href="../Account/account.php">
+                            <a class="nav-link p-0" href="/Account/account.php">
                                 <img src="../assets/image_user/<?php
                                 $user_id = $_SESSION['auth']->id; // variable prenant l'id de la session avec l'utilisateur connecté
                                 $query = "SELECT * FROM users WHERE id = $user_id"; // prends tout de la table users où l'utilisateur connecté corresponds à l'id
@@ -78,8 +80,8 @@ if (session_status() == PHP_SESSION_NONE){
                             </a>
                         </li>
                     <?php else: ?>
-                        <li class="nav-item"><a href="../Account/register.php" class="nav-link">S'inscrire</a></li>
-                        <li class="nav-item"><a href="../Account/login.php" class="nav-link">Se connecter</a></li>
+                        <li class="nav-item"><a href="/Account/register.php" class="nav-link">S'inscrire</a></li>
+                        <li class="nav-item"><a href="/Account/login.php" class="nav-link">Se connecter</a></li>
                     <?php endif; ?>
                 </ul>
             </div>

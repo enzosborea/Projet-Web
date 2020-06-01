@@ -92,14 +92,15 @@
                             <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
                         </svg>
                     </div>
-                    <select data-trigger="" name="price_night">
-                        <option value="">0</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                    </select>
+                    <input id="price_night" type="text" name="price_night" placeholder="Prix" />
+                </div>
+                <div class="input-field fouth-wrap">
+                    <div class="icon-wrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                        </svg>
+                    </div>
+                    <input id="person" type="text" name="person" placeholder="Personne(s)" max="5"/>
                 </div>
                 <div class="input-field fifth-wrap">
                     <button class="btn-search" type="submit">RECHERCHE</button>
@@ -225,38 +226,28 @@
     </div>
     <!--/.Accordion wrapper-->
     <!--/.Carousel Wrapper-->
+    <?php $query = "SELECT * FROM properties ORDER BY price_night LIMIT 3 ";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    ?>
     <section class="bg-light">
         <div class="row row-cols-1 row-cols-md-2 mx-5 pt-4"> <!--marge right/left 5 et marge top/bot à 5 -->
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="../assets/images/maison1.jpg" class="card-img-top" alt="..."> <!--image a integrer propre-->
-                    <div class="card-body">
-                        <h5 class="card-title">Maison</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a href="#" class="btn btn-primary">Voir</a>
+            <?php foreach ($result as $result_annonce) {?>
+                <div class="col mb-4">
+                    <div class="card" >
+                        <img class="card-img-top" src="../assets/images/maison1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $result_annonce['title']?></h5>
+                            <h6 class="card-title"><?php echo 'Ville : ' .  $result_annonce['ville'] ?></h6>
+                            <h6 class="card-title"><?php echo 'Pour ' .  $result_annonce['person'] . ' personne(s)'?></h6>
+                            <h6 class="card-title"><?php echo 'Prix à la nuit : ' .  $result_annonce['price_night'] . ' €'?></h6>
+                            <p class="card-text"><?php echo $result_annonce['description']?></p>
+                            <a href="/public/page_reservation.php?numID=<?= $result_annonce['id'] ?>" class="btn btn-primary" type="submit">Réserver</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="../assets/images/maison3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Maison</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a href="#" class="btn btn-primary">Voir</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="../assets/images/maison2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Maison</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <a href="#" class="btn btn-primary">Voir</a>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </section>
 </main>

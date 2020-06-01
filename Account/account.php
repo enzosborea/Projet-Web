@@ -101,8 +101,6 @@ if (isset($_FILES['myFile']) && // est-ce qu'on a bien le fichier ?
         <input type="submit" value="Envoyer" />
     </form>
 </div>
-
-<?php require_once '../include/footer.php' ?>
 </body>
 </html>
 

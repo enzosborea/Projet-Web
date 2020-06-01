@@ -42,8 +42,9 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
                     <!--Grid column-->
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <label for="" class="">Email</label>
-                            <input type="text" name="email" class="form-control">
+                            
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -55,8 +56,8 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <label for="">Mot de passe</label>
-                            <input type="password" name="password" class="form-control">
+                            <input type="password" id="password" name="password" class="form-control">
+                            <label for="password" class="">Mot de passe</label>
                         </div>
                     </div>
                 </div>

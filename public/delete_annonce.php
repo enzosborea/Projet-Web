@@ -9,8 +9,13 @@ $query->bindValue(':num', $_GET['numID'], PDO::PARAM_INT);
 //exécution
 $execute = $query->execute();?>
 
-<h2 class="mt-4 ml-4">Votre annonce à bien été supprimé.<h2>
+<div class="container">
+    <h2 class="mt-4 ml-4">Votre annonce à bien été supprimé.<h2>
 
+            <div class="mt-4">
+                <button class="text-center text-md-left btn btn-primary" onclick="window.location.href = 'http://localhost:8000/public/my_annonce.php';">Retour</button>
+            </div>
+</div>
 
 
 

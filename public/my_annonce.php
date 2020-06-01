@@ -2,6 +2,7 @@
 <?php require_once '../include/db.php';
 
 $user_id = $_SESSION['auth']->id;
+
 $query = "SELECT * FROM properties WHERE users_id = $user_id ORDER BY id DESC ";
 $stmt = $pdo->prepare($query);
 $stmt->execute();
@@ -16,17 +17,18 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="card-body">
             <h5 class="card-title"><?php echo $annonce['title']?></h5>
             <h6 class="card-title"><?php echo 'Pour ' .  $annonce['person'] . ' personne(s)'?></h6>
+            <h6 class="card-title"><?php echo 'Ville : ' .  $annonce['ville']?></h6>
+            <h6 class="card-title"><?php echo 'Salle(s) de bain(s) : ' .  $annonce['bathroom_count']?></h6>
             <h6 class="card-title"><?php echo 'Prix à la nuit : ' .  $annonce['price_night'] . ' €'?></h6>
             <p class="card-text"><?php echo $annonce['description']?></p>
             <form action="">
                 <a href="update_annonce.php?numID=<?= $annonce['id'] ?>" class="btn btn-primary" type="submit">Editer</a>
             </form>
             <form action="">
-            <a href="delete_annonce.php?numID=<?= $annonce['id'] ?>" class="btn btn-red" type="submit">Supprimer</a>
+                <a href="delete_annonce.php?numID=<?= $annonce['id'] ?>" class="btn btn-red" type="submit">Supprimer</a>
             </form>
         </div>
     </div>
 <?php } ?>
-<?php require_once '../include/footer.php' ?>
 </body>
 </html>

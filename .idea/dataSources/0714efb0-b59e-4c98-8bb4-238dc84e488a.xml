@@ -818,7 +818,7 @@
     <column id="251" parent="239" name="bathroom_count">
       <Position>9</Position>
       <Comment>Nombre de salle de bain (x)</Comment>
-      <DataType>varchar(10)|0s</DataType>
+      <DataType>int(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="252" parent="239" name="toilet_count">
@@ -827,29 +827,29 @@
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="239" name="swimming pool">
+    <column id="253" parent="239" name="start_date">
       <Position>11</Position>
-      <Comment>piscine oui/non</Comment>
-      <DataType>varchar(10)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="254" parent="239" name="start_date">
-      <Position>12</Position>
       <Comment>date début de séjour</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="239" name="end_date">
-      <Position>13</Position>
+    <column id="254" parent="239" name="end_date">
+      <Position>12</Position>
       <Comment>date fin de séjour</Comment>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="239" name="price_night">
-      <Position>14</Position>
+    <column id="255" parent="239" name="price_night">
+      <Position>13</Position>
       <Comment>prix de la nuit 
 </Comment>
       <DataType>decimal(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="256" parent="239" name="image_annonce1">
+      <Position>14</Position>
+      <Comment>image_annonce1</Comment>
+      <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="257" parent="239" name="users_id">

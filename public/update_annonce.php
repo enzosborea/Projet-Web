@@ -13,7 +13,7 @@ $execute = $query->execute();
 $contact = $query->fetch(PDO::FETCH_ASSOC);?>
 
 <div class="container">
-    <h2 class="h1-responsive font-weight-bold text-center my-5">Deposer une annonce</h2>
+    <h2 class="h1-responsive font-weight-bold text-center my-5">Modifier votre annonce</h2>
     <div class="row">
         <!--Grid column-->
         <div class="col-md-12 mb-md-0 mb-5 ">
@@ -45,6 +45,15 @@ $contact = $query->fetch(PDO::FETCH_ASSOC);?>
                         <div class="mb-0">
                             <label for="person">Nombre de personnes(s) :</label>
                             <input type="number" value="<?= $contact['person'] ?>" name="person" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="mb-0">
+                            <label for="lit">Salle(s) de bain(s) :</label>
+                            <input type="number" value="<?= $contact['bathroom_count'] ?>" name="bathroom_count" class="form-control">
                         </div>
                     </div>
                 </div>
