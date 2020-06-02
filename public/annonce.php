@@ -17,6 +17,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <h6 class="card-title"><?php echo 'Ville : ' .  $annonce['ville'] ?></h6>
             <h6 class="card-title"><?php echo 'Pour ' .  $annonce['person'] . ' personne(s)'?></h6>
             <h6 class="card-title"><?php echo 'Salle(s) de bain(s) : ' .  $annonce['bathroom_count']?></h6>
+            <h6 class="card-title"><?php echo 'Nombre de lit(s) : ' .  $annonce['bed_count']?></h6>
             <h6 class="card-title"><?php echo 'Prix à la nuit : ' .  $annonce['price_night'] . ' €'?></h6>
             <p class="card-text"><?php echo $annonce['description']?></p>
             <form action="">
