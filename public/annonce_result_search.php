@@ -1,5 +1,9 @@
 <?php require_once '../include/header.php' ?>
 <?php require_once '../include/db.php' ?>
+
+<div class="shadow p-3 bg-white rounded">
+    <h2 class="h1-responsive font-weight-bold text-left my-4">Résultats de la recherche :</h2>
+</div>
 <?php
 $destination = strtolower($_GET['destination'] ?? "");
 $price_night = strtolower($_GET['price_night'] ?? "");
@@ -30,9 +34,7 @@ $query = "SELECT * FROM properties WHERE id ";
         <?php } 
 ?>
 
-<div class="shadow p-3 bg-white rounded">
-    <h2 class="h1-responsive font-weight-bold text-left my-4">Résultats de la recherche :</h2>
-</div>
+
 <section class="bg-light">
     <div class="row row-cols-1 row-cols-md-2 mx-5 pt-4"> <!--marge right/left 5 et marge top/bot à 5 -->
     <?php foreach ($result as $result_annonce) {?>
@@ -53,6 +55,5 @@ $query = "SELECT * FROM properties WHERE id ";
         </div>
         <?php } ?>
 </section>
-<?php require_once '../include/footer.php';?>
 </body>
 </html>

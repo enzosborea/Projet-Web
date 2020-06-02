@@ -1,4 +1,5 @@
 <!-- Footer -->
+<div class="footer">
 <footer class="page-footer font-small bg-dark">
 
     <!-- Footer Links -->
@@ -62,4 +63,5 @@
     <!-- Copyright -->
 
 </footer>
+</div>
 <!-- Footer -->

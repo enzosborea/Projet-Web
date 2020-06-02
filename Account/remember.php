@@ -46,7 +46,7 @@ if(!empty($_POST) && !empty($_POST['email'])) {
                 <!--Grid row-->
 
                 <div class="text-center text-md-left mt-4">
-                    <button class="btn btn-primary" type="submit">Se connecter</button>
+                    <button class="btn btn-primary" type="submit">Valider</button>
                 </div>
             </form>
         </div>

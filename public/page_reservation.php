@@ -42,7 +42,7 @@ if ($annonce['ville'] == "Paris" ){
     $longitude =  2.3488;
     $fail = 'non';
 }
-if ($annonce['ville'] == "Jassans" ){
+if ($annonce['ville'] == "Jassans-Riottier" ){
     $latitude = 45.98279953;
     $longitude =  4.75868988037;
     $fail = 'non';
@@ -118,10 +118,10 @@ if ($annonce['ville'] == "Tassin" ){
                 <br>
                 <div>
                     <p>
-                        <?php echo 'Nombre de lit : ' . $annonce['bed_count']?>
+                        <?php echo 'Nombre de lit(s) : ' . $annonce['bed_count']?>
                     </p>
                     <p>
-                        <?php echo 'Nombre de Salle de bain : ' . $annonce['bathroom_count']?>
+                        <?php echo 'Nombre de Salle(s) de bain(s) : ' . $annonce['bathroom_count']?>
                     </p>
                     <p>
                         <?php echo 'Adresse : ' . $annonce['address']?> <br>

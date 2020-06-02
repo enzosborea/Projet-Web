@@ -1,5 +1,5 @@
 <?php require_once 'include/header.php' ?>
-<main>
+<div>
     <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
         <!--Indicators-->
         <ol class="carousel-indicators">
@@ -239,7 +239,7 @@
             <?php } ?>
         </div>
     </section>
-</main>
+</div>
 <?php require_once 'include/footer.php' ?>
 </body>
 </html>
