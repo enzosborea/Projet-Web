@@ -10,10 +10,12 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="shadow p-3 bg-white rounded">
     <h2 class="h1-responsive font-weight-bold text-center my-4">Toutes les annonces</h2>
 </div>
+<div class="row row-cols-1 row-cols-md-2 mx-5 pt-4"> <!--marge right/left 5 et marge top/bot à 5 -->
 <?php foreach ($result as $annonce) {?>
-    <div class="card w-50 mt-5 mb-5 ml-3">
-        <div class="card-body">
+    <div class="col mb-4">
+            <div class="card" style="min-width: 500px;max-width: 572px">
             <img class="card-img-top mb-4" src="../assets/images/maison1.jpg" alt="Card image cap">
+            <div class="card-body">
             <h5 class="card-title"><?php echo $annonce['title']?></h5>
             <h6 class="card-title"><?php echo 'Ville : ' .  $annonce['ville'] ?></h6>
             <h6 class="card-title"><?php echo 'Pour ' .  $annonce['person'] . ' personne(s)'?></h6>
@@ -30,8 +32,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <?php endif; ?>
             </form>
         </div>
+            </div>
     </div>
 <?php } ?>
+</div>
 <?php require_once '../include/footer.php' ?>
 </body>
 </html>

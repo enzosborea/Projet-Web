@@ -42,7 +42,7 @@ if ($annonce['ville'] == "Paris" ){
     $longitude =  2.3488;
     $fail = 'non';
 }
-if ($annonce['ville'] == "Jassans-Riottier" ){
+if ($annonce['ville'] == "Jassans" ){
     $latitude = 45.98279953;
     $longitude =  4.75868988037;
     $fail = 'non';
@@ -118,10 +118,10 @@ if ($annonce['ville'] == "Tassin" ){
                 <br>
                 <div>
                     <p>
-                        <?php echo 'Nombre de lit(s) : ' . $annonce['bed_count']?>
+                        <?php echo 'Nombre de lit : ' . $annonce['bed_count']?>
                     </p>
                     <p>
-                        <?php echo 'Nombre de Salle(s) de bain(s) : ' . $annonce['bathroom_count']?>
+                        <?php echo 'Nombre de Salle de bain : ' . $annonce['bathroom_count']?>
                     </p>
                     <p>
                         <?php echo 'Adresse : ' . $annonce['address']?> <br>
@@ -215,7 +215,7 @@ if ($annonce['ville'] == "Tassin" ){
 
                         <div class="card-body">
                             <h3 class="card-title" style="margin-left:20px">Reserver cette location !</h3>
-                            <p>Du :</p>
+                            <p>De :</p>
                             <div class="form-group row" style="margin-right:20px;margin-left:20px">
                                 <label for="date_enter" class="col-2 col-form-label"></label>
                                 <div class="col-10">
@@ -262,11 +262,15 @@ if ($annonce['ville'] == "Tassin" ){
                                 ?>
 
                                 <div class="mb-0"  style="margin-right:40px;margin-left:40px">
-                                    <input type="hidden" name="numID" value="<?= $user['id']?> ">
-                                    <input type="hidden" name="price_night" value="<?= $annonce['price_night']?> ">
-                                    <input type="hidden" name="sold" value="<?= $user['sold']?> ">
+                                    <input type="hidden" name="numID" value="<?= $user['id']?>" id="numID">
+                                    <input type="hidden" name="price_night" value="<?= $annonce['price_night']?> "id="price_night">
+                                    <input type="hidden" name="sold" value="<?= $user['sold']?> "id="sold">
+                                    <input type="hidden" name="email" value="<?= $user['email']?> "id="email">
+                                    <input type="hidden" name="title" value="<?= $annonce['title']?> "id="title">
+                                    
+
                                     <label for="">Nombre de personnes(s) :</label>
-                                    <input type="number" name="nb_personne" class="form-control" max="<?php echo  $annonce['person']?>" min="1" value="1">
+                                    <input type="number" name="nb_personne" class="form-control" max="<?php echo  $annonce['person']?>" min="1" value="1" id="nb_personne">
                                 </div>
 
                                 <br>
@@ -403,3 +407,4 @@ if ($annonce['ville'] == "Tassin" ){
 
     </footer>
     <!-- Footer -->
+   <?php $_SESSION['flash']['success'] = 'Un email de confirmation vous a été envoyé'; ?>

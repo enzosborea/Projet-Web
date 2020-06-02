@@ -12,9 +12,9 @@ $execute = $query->execute();?>
 <div class="container">
     <h2 class="mt-4 ml-4">Votre annonce a bien été supprimée.<h2>
 
-            <div class="mt-4">
-                <button class="text-center text-md-left btn btn-primary" onclick="window.location.href = 'http://localhost:8000/public/my_annonce.php';">Retour</button>
-            </div>
+        <div class="mt-4">
+            <button class="text-center text-md-left btn btn-primary" onclick="window.location.href = 'http://localhost:8000/public/my_annonce.php';">Retour</button>
+        </div>
 </div>
 
 
