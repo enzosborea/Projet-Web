@@ -14,7 +14,7 @@ $pdoStat->bindValue(':price_night', $_POST['price_night'], PDO::PARAM_INT);
 $execute = $pdoStat->execute();?>
 
 <div class="container">
-<h2 class="mt-4 ml-4">Votre annonce à bien été modifié.<h2>
+<h2 class="mt-4 ml-4">Votre annonce a bien été modifiée.<h2>
 
 <div class="mt-4">
     <button class="text-center text-md-left btn btn-primary" onclick="window.location.href = 'http://localhost:8000/public/my_annonce.php';">Retour</button>

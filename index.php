@@ -18,7 +18,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h1 class="h1-responsive">Wamingo</h1>
-                    <h5 class="text-responsive">Reservation de bien pour particulier</h5>
+                    <h5 class="text-responsive">Réservation de bien pour particuliers</h5>
                 </div>
             </div>
             <div class="carousel-item">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h1 class="h1-responsive">Wamingo</h1>
-                    <h5 class="text-responsive">Reservation de bien pour particulier</h5>
+                    <h5 class="text-responsive">Réservation de bien pour particuliers</h5>
                 </div>
             </div>
             <div class="carousel-item">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="carousel-caption">
                     <h1 class="h1-responsive">Wamingo</h1>
-                    <h5 class="text-responsive">Reservation de bien pour particulier</h5>
+                    <h5 class="text-responsive">Réservation de bien pour particuliers</h5>
                 </div>
             </div>
         </div>
@@ -232,8 +232,13 @@
                             <h6 class="card-title"><?php echo 'Pour ' .  $result_annonce['person'] . ' personne(s)'?></h6>
                             <h6 class="card-title"><?php echo 'Prix à la nuit : ' .  $result_annonce['price_night'] . ' €'?></h6>
                             <p class="card-text"><?php echo $result_annonce['description']?></p>
+                            <?php if (isset($_SESSION['auth'])): ?>
                             <a href="/public/page_reservation.php?numID=<?= $result_annonce['id'] ?>" class="btn btn-primary" type="submit">Réserver</a>
-                        </div>
+                            <?php endif; ?>
+                            <?php if (!isset($_SESSION['auth'])): ?>
+                            <a href="Account/login.php" class="btn btn-grey" type="submit">Connectez-vous</a>
+                            <?php endif; ?>
+                    </div>
                     </div>
                 </div>
             <?php } ?>

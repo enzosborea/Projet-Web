@@ -29,7 +29,7 @@ if(!empty($_POST)) {
     }
 
     if (empty($_POST['bathroom_count']) || !preg_match('/^[0-9]+/', $_POST['bathroom_count'])) {
-        $errors['bathroom_count'] = 'Nombre de salle de bain obligatoire';
+        $errors['bathroom_count'] = 'Nombre de salle(s) de bain(s) obligatoire';
     }
 
     if (empty($_POST['bed_count']) || !preg_match('/^[0-9]+/', $_POST['bed_count'])) {
@@ -37,11 +37,11 @@ if(!empty($_POST)) {
     }
 
     if (empty($_POST['price_night']) || !preg_match('/^[0-9]+/', $_POST['price_night'])) {
-        $errors['price_night'] = 'Prix manquant obligatoire';
+        $errors['price_night'] = 'Prix obligatoire';
     }
 
     if (empty($_POST['person']) || !preg_match('/^[0-9]+/', $_POST['person'])) {
-        $errors['person'] = 'Nombre de personne obligatoire';
+        $errors['person'] = 'Nombre de personnes obligatoires';
     }
     
 
@@ -52,8 +52,6 @@ if(!empty($_POST)) {
     }
 }
 ?>
-
-
 <div class="container">
             <h2 class="h1-responsive font-weight-bold text-center my-5">Deposer une annonce</h2>
             <?php if (!empty($errors)): ?>

@@ -38,7 +38,6 @@ $query = "SELECT * FROM properties WHERE id ";
 <section class="bg-light">
     <div class="row row-cols-1 row-cols-md-2 mx-5 pt-4"> <!--marge right/left 5 et marge top/bot à 5 -->
     <?php foreach ($result as $result_annonce) {?>
-        
 
     <div class="col mb-4">
             <div class="card" style="min-width: 500px;max-width: 572px">
@@ -49,11 +48,17 @@ $query = "SELECT * FROM properties WHERE id ";
                     <h6 class="card-title"><?php echo 'Pour ' .  $result_annonce['person'] . ' personne(s)'?></h6>
                     <h6 class="card-title"><?php echo 'Prix à la nuit : ' .  $result_annonce['price_night'] . ' €'?></h6>
                     <p class="card-text"><?php echo $result_annonce['description']?></p>
-                    <a href="page_reservation.php?numID=<?= $result_annonce['id'] ?>" class="btn btn-primary" type="submit">Voir</a>
+                    <?php if (isset($_SESSION['auth'])): ?>
+                        <a href="page_reservation.php?numID=<?= $result_annonce['id'] ?>" class="btn btn-primary" type="submit">Voir</a>
+                    <?php endif; ?>
+                    <?php if (!isset($_SESSION['auth'])): ?>
+                        <a href="../Account/register.php" class="btn btn-grey" type="submit">Se connectez</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
         <?php } ?>
 </section>
+
 </body>
 </html>

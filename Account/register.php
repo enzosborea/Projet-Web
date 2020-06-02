@@ -110,14 +110,17 @@ if(!empty($_POST)) {
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
                                     <label for="">Confirmez votre mot de passe</label>
-                                    <input type="password" i name="password_confirm" class="form-control">
+                                    <input type="password" name="password_confirm" class="form-control">
+                                    <a href="login.php">Déjà inscrit ?</a>
                                 </div>
                             </div>
                         </div>
 
+
                         <div class="text-center text-md-left mt-4">
                             <button class="btn btn-primary" type="submit">M'inscrire</button>
                         </div>
+
                     </form>
                 </div>
             </div>

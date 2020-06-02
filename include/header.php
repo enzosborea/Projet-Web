@@ -80,8 +80,8 @@ if (session_status() == PHP_SESSION_NONE){
                             </a>
                         </li>
                     <?php else: ?>
-                        <li class="nav-item"><a href="/Account/register.php" class="nav-link">S'inscrire</a></li>
-                        <li class="nav-item"><a href="/Account/login.php" class="nav-link">Se connecter</a></li>
+                        <li class="nav-item"><a href="/Account/register.php" class="nav-link">Inscription</a></li>
+                        <li class="nav-item"><a href="/Account/login.php" class="nav-link">Connexion</a></li>
                     <?php endif; ?>
                 </ul>
             </div>

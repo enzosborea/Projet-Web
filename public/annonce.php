@@ -11,8 +11,9 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <h2 class="h1-responsive font-weight-bold text-center my-4">Toutes les annonces</h2>
 </div>
 <?php foreach ($result as $annonce) {?>
-    <div class="card w-75 mt-5 mb-5 ml-3">
+    <div class="card w-50 mt-5 mb-5 ml-3">
         <div class="card-body">
+            <img class="card-img-top mb-4" src="../assets/images/maison1.jpg" alt="Card image cap">
             <h5 class="card-title"><?php echo $annonce['title']?></h5>
             <h6 class="card-title"><?php echo 'Ville : ' .  $annonce['ville'] ?></h6>
             <h6 class="card-title"><?php echo 'Pour ' .  $annonce['person'] . ' personne(s)'?></h6>
@@ -21,7 +22,12 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <h6 class="card-title"><?php echo 'Prix à la nuit : ' .  $annonce['price_night'] . ' €'?></h6>
             <p class="card-text"><?php echo $annonce['description']?></p>
             <form action="">
-                <a href="page_reservation.php?numID=<?= $annonce['id'] ?>" class="btn btn-primary" type="submit" onclick="<? log_only();?>">Réserver</a>
+                <?php if (isset($_SESSION['auth'])): ?>
+                    <a href="/public/page_reservation.php?numID=<?= $annonce['id'] ?>" class="btn btn-primary" type="submit">Réserver</a>
+                <?php endif; ?>
+                <?php if (!isset($_SESSION['auth'])): ?>
+                    <a href="../Account/register.php" class="btn btn-grey" type="submit">Connectez-vous</a>
+                <?php endif; ?>
             </form>
         </div>
     </div>
