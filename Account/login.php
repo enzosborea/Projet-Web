@@ -43,7 +43,7 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
                     <div class="col-md-12">
                         <div class="md-form mb-0">
                             
-                            <input type="text" id="email" name="email" class="form-control">
+                            <input type="email" id="email" name="email" class="form-control">
                             <label for="email" class="">Email</label>
                         </div>
                     </div>
@@ -58,6 +58,7 @@ if(!empty($_POST) && !empty($_POST['email']) && !empty($_POST['password'])) {
                         <div class="md-form mb-0">
                             <input type="password" id="password" name="password" class="form-control">
                             <label for="password" class="">Mot de passe</label>
+                            <a href="remember.php">Mot de passe oublié ?</a>
                         </div>
                     </div>
                 </div>

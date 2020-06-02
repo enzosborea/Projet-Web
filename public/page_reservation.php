@@ -215,7 +215,7 @@ if ($annonce['ville'] == "Tassin" ){
 
                         <div class="card-body">
                             <h3 class="card-title" style="margin-left:20px">Reserver cette location !</h3>
-                            <p>De :</p>
+                            <p>Du :</p>
                             <div class="form-group row" style="margin-right:20px;margin-left:20px">
                                 <label for="date_enter" class="col-2 col-form-label"></label>
                                 <div class="col-10">

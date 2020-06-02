@@ -94,6 +94,5 @@
 <!--Section: Contact v.2-->
 
 </main>
-<?php require_once '../include/footer.php' ?>
 </body>
 </html>

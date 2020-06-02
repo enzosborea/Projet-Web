@@ -13,7 +13,6 @@ require '../include/functions.php'; ?>
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
         require_once '../include/db.php';
         $pdo->prepare('UPDATE users SET password = ?')->execute([$password]);
-        $_SESSION['flash']['success'] = "ok";
     }
 }
 
