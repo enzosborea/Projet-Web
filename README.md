@@ -1,6 +1,6 @@
 # Projet-Airbnb Wamingo
 
-Fichier d'instruction (macOS) :
+*Fichier d'instruction (macOS) :*
 
 - Pré-requis (PHP, MAMP, mySQL, Node.js, npm)
 
@@ -62,7 +62,7 @@ Modifier la configuration de PHP pour qu'il envoit les emails en utilisant ce se
      password : hcybhtb0ajfmWaWS
      
      
-Fichier d'instruction (Windows) :
+*Fichier d'instruction (Windows) :*
 
 - Version php 7.3.5
 - Version WAMP 3.1.9
